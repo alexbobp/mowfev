@@ -9,4 +9,4 @@ pluginManagement {
 }
 rootProject.name = "websystem"
 
-include("websystem", ":dbsystem")
+include(":dbsystem")

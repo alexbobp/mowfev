@@ -11,8 +11,6 @@ import java.io.*
 
 actual class Sample {
     actual fun checkMe(): Int {
-        test.Meow() // todo: this line should succeed (due to test.scala)
-
         return 42
     }
 }
@@ -22,6 +20,12 @@ actual object Platform {
 }
 
 fun main() {
+    test.Meow().main() // todo: this line should succeed (due to test.scala)
+
+    if ("3".toInt() == 3) {
+        return
+    }
+
     embeddedServer(Netty, port = 8080, host = "127.0.0.1") {
         val currentDir = File(".").absoluteFile
         environment.log.info("Current directory: $currentDir")

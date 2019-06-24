@@ -1,9 +1,7 @@
 package test
 
-def main() {
-  println("scala callad!")
-}
-
 class Meow {
-
+  def main() {
+    println("scala callad!")
+  }
 }
