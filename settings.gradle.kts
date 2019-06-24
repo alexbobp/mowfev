@@ -7,5 +7,6 @@ pluginManagement {
         }
     }
 }
-rootProject.name = 'websystem'
+rootProject.name = "websystem"
 
+include("dbsystem")
