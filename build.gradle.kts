@@ -48,6 +48,7 @@ kotlin {
                 implementation("io.ktor:ktor-server-netty:$ktor_version")
                 implementation("io.ktor:ktor-html-builder:$ktor_version")
                 implementation("ch.qos.logback:logback-classic:$logback_version")
+                api(project("dbsystem"))
             }
         }
         val jvmTest by getting {

@@ -10,7 +10,11 @@ import kotlinx.html.*
 import java.io.*
 
 actual class Sample {
-    actual fun checkMe() = 42
+    actual fun checkMe(): Int {
+        test.Meow() // todo: this line should succeed (due to test.scala)
+
+        return 42
+    }
 }
 
 actual object Platform {
